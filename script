@@ -1,0 +1,9 @@
+#! /bin/bash
+echo "Starting to compile"
+g++ tsp.cpp -o tsp
+echo "Starting the process"
+python3 main.py
+echo "Preparing image"
+./tsp
+python3 output.py
+
